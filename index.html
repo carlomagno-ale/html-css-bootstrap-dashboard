@@ -60,15 +60,10 @@
     <!-- MAIN -->
     <main>
         <div class="container mt-4">
-
-            <section>
-                <div class="row">
-                    <div class="col-8">
-                        <h1>Catalogo Libri</h1>
-                    </div>
-                    <div class="col-4">
-                        <button type="button" class="btn btn-primary btn-sm">Aggiungi Libro </button>
-                    </div>
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <h1>Catalogo Libri</h1>
+                    <button type="button" class="btn btn-primary btn-sm">Aggiungi Libro </button>
                     <!-- book table -->
                     <table class="table table-striped mt-4">
                         <thead>
@@ -243,89 +238,95 @@
                             <!-- end book row -->
                         </tbody>
                     </table>
-                    <!-- end book table -->
-            </section>
-            <!-- TO DO card -->
-            <div class="card mb-3">
-                <div class="card-header">
-                    <h3>To do</h3>
                 </div>
-                <ul class="list-group m-3">
-                    <li class="list-group-item">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Chiamare Segreteria
-                        </label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Mandare avvisi prestiti scaduti
-                        </label>
-                    </li>
-                    <li class="list-group-item">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Ordinare nuovi libri
-                        </label>
-                    </li>
-                </ul>
+                <!-- end book table -->
+                <!-- TO DO card -->
+                <div class="col-12 col-lg-4">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h3>To do</h3>
+                        </div>
+                        <ul class="list-group m-3">
+                            <li class="list-group-item">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Chiamare Segreteria
+                                </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Mandare avvisi prestiti scaduti
+                                </label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Ordinare nuovi libri
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- end TO DO card-->
+                    <!-- FAQ -->
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h3>F.A.Q.</h3>
+                        </div>
+                        <div class="accordion accordion-flush p-3" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Come aggiungere un nuovo libro?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                        elit.
+                                        Commodi, odio.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Come posso accedere all'anagrafica utenti?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, culpa.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, nisi!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end FAQ -->
             </div>
-            <!-- end TO DO card-->
-            <!-- FAQ -->
-            <div class="card mb-3">
-                <div class="card-header">
-                    <h3>F.A.Q.</h3>
-                </div>
-                <div class="accordion accordion-flush p-3" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                Come aggiungere un nuovo libro?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Commodi, odio.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                Come posso accedere all'anagrafica utenti?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, culpa.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                Posso usare questa dashboard da mobile?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, nisi!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end FAQ -->
         </div>
 
     </main>
