@@ -13,7 +13,91 @@
 </head>
 
 <body>
-    <a href="./index.html" class="btn btn-primary" role="button"> Catalogo Libri</a>
+    <header>
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/duck.png" alt="Logo" width="60" height="60"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- END NAV -->
+    </header>
+
+    <div class="container mt-4 mb-5">
+        <!-- start row -->
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h2>Nuovo Libro</h2>
+                    <a href="./index.html" class="btn btn-primary" role="button"> Catalogo Libri</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 ">
+            <div class="col-6">
+                <span>Nome Autore</span>
+                <input type="text" class="form-control mt-2" placeholder="Inserisci il nome dell'autore"
+                    aria-label="First name">
+            </div>
+            <div class="col-6">
+                <span>Cognome Autore</span>
+                <input type="text" class="form-control mt-2" placeholder="Inserisci cognome dell'autore"
+                    aria-label="Last name">
+            </div>
+
+            <div class="col-12 mt-2">
+                <span>Titolo</span>
+                <input type="text" class="form-control mt-2" placeholder="Inserisci il titolo del libro"
+                    aria-label="Title">
+            </div>
+            <div class="col-4 mt-2">
+                <span>Genere</span>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+            </div>
+            <div class="col-4 mt-2">
+                <span>Anno di Pubblicazione</span>
+                <input type="text" class="form-control mt-2" placeholder="Inserisci l'anno" aria-label="Title">
+            </div>
+            <div class="col-4 mt-2">
+                <span>ISBN#</span>
+                <input type="text" class="form-control mt-2" placeholder="Inserisci il codice ISBN#" aria-label="Title">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
 
 
     <!-- Bootstrap -->
